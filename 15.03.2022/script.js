@@ -55,7 +55,13 @@ const goods = [
         price: 1200
     },
 ];
-const filterPrice = goods.filter(function(money){
-    return money.price > 800;
-});
-console.log(filterPrice);
+const filterPrice = (goodsArray, price, operator) => {
+    return  newArray = goodsArray.filter(goods => {
+        if (operator === '>'){
+            return goods.price > price;
+        } else if (operator === '<'){
+            return goods.price < price;
+        }
+    })
+}
+console.log(filterPrice(goods, '<'))
