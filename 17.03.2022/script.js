@@ -8,3 +8,13 @@ let result = arr.reduce(function(sum,elem){
     }
 });
 console.log(result);
+
+
+const Arr = (element, count) => {
+    let Arr = [];
+    for(count; count > 0; count--) {
+        Arr.push(element);
+    }
+    return Arr;
+}
+console.log(Arr('a', 3))
